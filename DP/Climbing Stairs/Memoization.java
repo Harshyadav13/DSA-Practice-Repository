@@ -1,6 +1,8 @@
 import java.util.Arrays;
 import java.util.Scanner;
 
+//Time complexity = O(n) and Space Complexity and Recursion call stack = O(n)
+
 public class Memoization {
 
     public static int Trib(int n, int[] dp) {

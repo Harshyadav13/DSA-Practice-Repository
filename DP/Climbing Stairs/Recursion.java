@@ -1,5 +1,8 @@
 import java.util.Scanner;
 
+//time complexity = O(3^n) Space complexity & recursion call stack = O(n)
+//https://www.pepcoding.com/resources/online-java-foundation/dynamic-programming-and-greedy/climb-stairs-official/ojquestion
+
 public class Recursion {
 
     public static int Trib(int n) {
@@ -18,4 +21,3 @@ public class Recursion {
     }
 }
 
-//time complexity = O(2^n)
