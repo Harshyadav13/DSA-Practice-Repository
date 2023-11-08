@@ -1,5 +1,7 @@
 import java.util.Scanner;
 
+//Link =  https://www.hackerrank.com/contests/july22-beta-java-dsa-class-challenges/challenges/print-all-factors-of-a-number
+
 public class PrintFactors {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -13,30 +15,3 @@ public class PrintFactors {
     }
 }
 
-//    Take a whole number N as an integer input and print all the factors of it such that each factor should be printed in a separate line.
-//
-//        Input Format
-//
-//    N will be given as an integer input.
-//
-//        Constraints
-//
-//        0 <= N <= 2^31-1
-//        Output Format
-//
-//        Print all the factors of the number where each factor should be printed in a separate line.
-//
-//        Sample Input 0
-//
-//        12
-//        Sample Output 0
-//
-//        1
-//        2
-//        3
-//        4
-//        6
-//        12
-//        Sample Input 1
-//
-//        30

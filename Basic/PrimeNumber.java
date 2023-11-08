@@ -1,5 +1,7 @@
 import java.util.Scanner;
 
+//Link = https://www.hackerrank.com/contests/july22-beta-java-dsa-class-challenges/challenges/prime-checker-2-1
+
 public class PrimeNumber {
 
     public static boolean isPrime(int n) {
@@ -25,28 +27,3 @@ public class PrimeNumber {
 }
 
 
-// pg No. 10 prime checker 2
-//    Write a Java program to check whether a number is a Prime number or not.
-
-//        Input Format
-//
-//        The first line of input will contain an integer T — the number of test cases. The description of T test cases follows.
-//
-//        For each test case,
-//
-//        First line contain an integer N.
-//
-//        Constraints
-//
-//        1 <= N <= 10^4
-//        Output Format
-//
-//        Print Yes or No.
-//
-//        Sample Input 0
-//
-//        1
-//        5
-//        Sample Output 0
-//
-//        Yes
