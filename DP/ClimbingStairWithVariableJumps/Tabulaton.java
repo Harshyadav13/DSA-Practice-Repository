@@ -1,6 +1,8 @@
 import java.util.Arrays;
 import java.util.Scanner;
 
+//Time complexity = O(N * jumps) , Space-Complexity = O(N) - because of DP table
+
 public class Tabulaton {
 
     public static void main(String[] args) {
