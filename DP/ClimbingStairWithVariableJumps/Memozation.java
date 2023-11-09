@@ -1,7 +1,7 @@
 import java.util.Arrays;
 import java.util.Scanner;
 
-//time complexity = O(n) space complexity = O(n)= recursion call stack
+//time complexity = O(n * jumps ) space complexity = O(n)= recursion call stack
 
 public class Memozation {
     public static int memo(int n, int[] jumps, int[] dp) {

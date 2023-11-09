@@ -1,8 +1,10 @@
 import java.util.Arrays;
 import java.util.Scanner;
 
+//DP - 2nd Video
 //Link = https://www.pepcoding.com/resources/online-java-foundation/dynamic-programming-and-greedy/climb-stairs-with-variable-jumps-official/ojquestion
 
+//SPACE OPTIMIZATION SOLUTION IS NOT POSSIBLE BECAUSE (JUMP VALUE IF NOT FIXED)
 //time complexity = O(n) space complexity = O(n)= recursion call stack
 public class Recursion {
 

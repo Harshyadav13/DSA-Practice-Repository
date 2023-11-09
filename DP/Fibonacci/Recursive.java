@@ -1,5 +1,9 @@
 import java.util.Scanner;
 
+//DP - 1st Video
+//time complexity  = O(2^n)
+
+
 public class Recursive {
     public static int fib(int n) {
         if(n == 0) return 0;
@@ -17,4 +21,3 @@ public class Recursive {
     }
 }
 
-//time complexity  = O(2^n)
