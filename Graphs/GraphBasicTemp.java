@@ -2,7 +2,7 @@ import java.util.*;
 
 class Pair {
     int nbr;
-    int weight; // Added semicolon to end of int declaration
+    int weight;
 
     // Constructor for unweighted edge
     Pair(int nbr) {
