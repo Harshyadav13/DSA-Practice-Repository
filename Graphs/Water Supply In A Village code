@@ -1,0 +1,64 @@
+//  https://www.naukri.com/code360/problems/water-supply-in-a-village_1380956?leftPanelTabValue=PROBLEM
+
+import java.util.*;
+
+public class Solution {
+
+    public static class Pair implements Comparable<Pair> {
+        int node;
+        int weight;
+
+        public Pair(int node, int weight) {
+            this.node = node;
+            this.weight = weight;
+        }
+
+        public int compareTo(Pair other) {
+            return this.weight - other.weight;
+        }
+    }
+
+
+    public static int supplyWater(int n, int k, int[] wells, int[][] pipes) {
+
+        ArrayList<Pair>[] adj = new ArrayList[n + 1];
+
+        
+        for(int i = 0; i <= n; i++) adj[i] = new ArrayList<>();
+
+        for(int[] pipe : pipes) {
+            adj[pipe[0]].add(new Pair(pipe[1], pipe[2]));
+            adj[pipe[1]].add(new Pair(pipe[0], pipe[2]));
+
+        }
+
+        for(int i = 0; i < n; i++) {
+            adj[0].add(new Pair(i+1, wells[i]));
+            adj[i + 1].add(new Pair(0, wells[i]));
+        }
+
+
+        PriorityQueue<Pair> q = new PriorityQueue<>();
+        q.add(new Pair(0, 0));
+        boolean[] vis = new boolean[n + 1];
+        int cost = 0;
+
+        while(!q.isEmpty()) {
+
+        Pair top = q.poll();
+
+        if(vis[top.node] == true) continue;
+
+        vis[top.node] = true;
+
+        cost = cost + top.weight;
+
+        for(Pair nbr : adj[top.node]) {
+            q.add(new Pair(nbr.node, nbr.weight));
+        }
+
+        }
+        return cost;
+    }
+    
+}
